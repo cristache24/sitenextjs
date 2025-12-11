@@ -68,52 +68,92 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Carloom - Platformă Digitală pentru Programări Auto și Gestionare
-          Flote | Service Auto Online
+          Carloom - Programare Service Auto Online | Atelier, Detailing, ITP,
+          Mentenanță Vehicul | Flote & Ride-Sharing
         </title>
         <meta
           name="description"
-          content="Carloom este platforma digitală modernă pentru programări auto, gestionare flote și service-uri auto. Simplifică întreținerea mașinii tale cu programări rapide, devize electronice și istoric complet. Disponibil pentru șoferi particulari, service-uri auto și flote auto."
+          content="Programare service auto online, atelier, detailing, spălătorie, tinichigerie, vopsitorie, ITP, mentenanță vehicul. Platformă digitală pentru programări auto, gestionare flote, ride-sharing (Uber, Bolt), închirieri auto. Statistici vehicul, mentenanță auto, programare întreținere. Gratuit pentru început."
         />
         <meta
           name="keywords"
-          content="programare auto, service auto, întreținere auto, flote auto, rent a car, ride sharing, devize auto, istoric service, ITP, revizie auto, Carloom, platformă auto, gestionare flote, service online"
+          content="programare, programare auto, programare service, programare itp, programare intretinere, service, service auto, atelier, atelier auto, detailing, detailing auto, spalatorie, spalatorie auto, tinichigerie, vopsitorie, itp, programare itp, asigurare, asigurare auto, vehicul, masina, mentenanta, mentenanta auto, mentenanta vehicul, flota, flote auto, inchirieri, inchiriere, inchiriere auto, ride-sharing, uber, bolt, comision, statistici vehicul, intretinere auto, revizie auto, reparații auto, diagnostic auto, deviz auto, factura auto, istoric auto, RCA auto, vulcanizare, mecanic auto, electrician auto, climatizare auto, ECU auto, tuning auto, car detailing, car wash, rent a car, fleet management, service auto bucuresti, service auto romania, programare online, gestionare flote, platformă auto, Carloom"
         />
         <meta name="author" content="Carloom" />
-        <meta name="robots" content="index, follow" />
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
         <meta name="language" content="Romanian" />
         <meta name="revisit-after" content="7 days" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#0a192f" />
+        <meta name="geo.region" content="RO" />
+        <meta name="geo.placename" content="România" />
+        <meta name="distribution" content="global" />
+        <meta name="rating" content="general" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://carloom.ro/" />
         <meta
           property="og:title"
-          content="Carloom - Platformă Digitală pentru Programări Auto"
+          content="Carloom - Programare Service Auto Online | Atelier, Detailing, ITP, Mentenanță Vehicul"
         />
         <meta
           property="og:description"
-          content="Simplifică întreținerea mașinii tale cu programări rapide, devize electronice și istoric complet. Pentru șoferi, service-uri auto și flote."
+          content="Programare service auto online, atelier, detailing, spălătorie, tinichigerie, vopsitorie, ITP. Platformă pentru programări auto, gestionare flote, ride-sharing (Uber, Bolt), închirieri auto. Statistici vehicul, mentenanță auto, programare întreținere."
         />
         <meta property="og:image" content="https://carloom.ro/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          property="og:image:alt"
+          content="Carloom - Platformă Digitală pentru Programări Auto și Gestionare Flote"
+        />
         <meta property="og:locale" content="ro_RO" />
         <meta property="og:site_name" content="Carloom" />
+        <meta property="og:locale:alternate" content="en_US" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://carloom.ro/" />
+        <meta name="twitter:site" content="@carloom" />
+        <meta name="twitter:creator" content="@carloom" />
         <meta
           name="twitter:title"
-          content="Carloom - Platformă Digitală pentru Programări Auto"
+          content="Carloom - Programare Service Auto Online | Atelier, Detailing, ITP"
         />
         <meta
           name="twitter:description"
-          content="Simplifică întreținerea mașinii tale cu programări rapide, devize electronice și istoric complet."
+          content="Programare service auto online, atelier, detailing, ITP, mentenanță vehicul. Platformă pentru programări auto, gestionare flote, ride-sharing (Uber, Bolt), închirieri auto."
         />
         <meta name="twitter:image" content="https://carloom.ro/og-image.jpg" />
+        <meta
+          name="twitter:image:alt"
+          content="Carloom - Platformă Digitală pentru Programări Auto"
+        />
 
         {/* Canonical URL */}
         <link rel="canonical" href="https://carloom.ro/" />
+
+        {/* Additional SEO Meta Tags */}
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
+        />
+        <meta name="apple-mobile-web-app-title" content="Carloom" />
+
+        {/* Alternate Languages */}
+        <link rel="alternate" hrefLang="ro" href="https://carloom.ro/" />
+        <link rel="alternate" hrefLang="x-default" href="https://carloom.ro/" />
+
+        {/* Preconnect for Performance */}
+        <link rel="preconnect" href="https://app.carloom.ro" />
+        <link rel="dns-prefetch" href="https://app.carloom.ro" />
 
         {/* Structured Data - Organization */}
         <script
@@ -126,16 +166,23 @@ export default function Home() {
               url: "https://carloom.ro",
               logo: "https://carloom.ro/logo.png",
               description:
-                "Platformă digitală pentru programări auto, gestionare flote și service-uri auto",
+                "Platformă digitală pentru programări auto, gestionare flote și service-uri auto. Programare service auto online, atelier, detailing, spălătorie, tinichigerie, vopsitorie, ITP, mentenanță vehicul, flote auto, ride-sharing, închirieri auto.",
               contactPoint: {
                 "@type": "ContactPoint",
                 contactType: "customer service",
                 email: "contact@carloom.ro",
+                availableLanguage: "Romanian",
+              },
+              areaServed: {
+                "@type": "Country",
+                name: "România",
               },
               sameAs: [
                 "https://www.facebook.com/carloom",
                 "https://www.instagram.com/carloom",
               ],
+              keywords:
+                "programare auto, service auto, atelier auto, detailing, spălătorie, tinichigerie, vopsitorie, ITP, mentenanță vehicul, flote auto, ride-sharing, uber, bolt, închirieri auto",
             }),
           }}
         />
@@ -150,16 +197,35 @@ export default function Home() {
               name: "Carloom",
               applicationCategory: "AutomotiveApplication",
               operatingSystem: "Web, iOS, Android",
+              description:
+                "Platformă digitală pentru programare service auto, atelier, detailing, spălătorie, tinichigerie, vopsitorie, ITP, mentenanță vehicul, gestionare flote, ride-sharing, închirieri auto",
               offers: {
                 "@type": "Offer",
                 price: "0",
                 priceCurrency: "RON",
+                availability: "https://schema.org/InStock",
               },
               aggregateRating: {
                 "@type": "AggregateRating",
                 ratingValue: "4.8",
                 ratingCount: "12548",
+                bestRating: "5",
+                worstRating: "1",
               },
+              featureList: [
+                "Programare service auto online",
+                "Gestionare flote auto",
+                "Statistici vehicul",
+                "Mentenanță vehicul",
+                "Programare ITP",
+                "Programare întreținere",
+                "Detailing auto",
+                "Spălătorie auto",
+                "Tinichigerie",
+                "Vopsitorie",
+                "Ride-sharing (Uber, Bolt)",
+                "Închirieri auto",
+              ],
             }),
           }}
         />
@@ -173,11 +239,92 @@ export default function Home() {
               "@type": "WebSite",
               name: "Carloom",
               url: "https://carloom.ro",
+              description:
+                "Platformă digitală pentru programare service auto, atelier, detailing, spălătorie, tinichigerie, vopsitorie, ITP, mentenanță vehicul, gestionare flote, ride-sharing, închirieri auto",
+              inLanguage: "ro-RO",
               potentialAction: {
                 "@type": "SearchAction",
                 target: "https://carloom.ro/search?q={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
+            }),
+          }}
+        />
+
+        {/* Structured Data - Service (Auto Repair) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              serviceType: "Auto Repair Service",
+              provider: {
+                "@type": "Organization",
+                name: "Carloom",
+                url: "https://carloom.ro",
+              },
+              areaServed: {
+                "@type": "Country",
+                name: "România",
+              },
+              description:
+                "Programare service auto online, atelier auto, mecanic auto, electrician auto, reparații auto, diagnostic auto, revizie auto, întreținere auto, mentenanță vehicul",
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "RON",
+              },
+            }),
+          }}
+        />
+
+        {/* Structured Data - AutoWash */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              serviceType: "Car Wash Service",
+              provider: {
+                "@type": "Organization",
+                name: "Carloom",
+                url: "https://carloom.ro",
+              },
+              description:
+                "Programare spălătorie auto, detailing auto, curățare auto, protecție auto, finisare auto",
+            }),
+          }}
+        />
+
+        {/* Structured Data - BreadcrumbList */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Acasă",
+                  item: "https://carloom.ro",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Programare Service Auto",
+                  item: "https://carloom.ro/#servicii",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 3,
+                  name: "Atelier Auto",
+                  item: "https://carloom.ro/#servicii",
+                },
+              ],
             }),
           }}
         />
@@ -214,7 +361,7 @@ export default function Home() {
                 <span className="bg-gradient-to-r from-[#00f7ff] to-[#00d4e6] bg-clip-text text-transparent">
                   Industria Auto
                 </span>
-          </h1>
+              </h1>
               <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
                 Simplifică întreținerea mașinii tale cu programări rapide,
                 devize electronice și istoric complet. Pentru șoferi
@@ -222,7 +369,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
                 <a
-                  href="#despre"
+                  href="https://app.carloom.ro"
                   className="relative border-2 border-[#00f7ff] text-[#00f7ff] px-8 py-3 rounded-xl font-bold text-base hover:bg-[#00f7ff] hover:text-[#0a192f] transition-all transform hover:scale-105 overflow-hidden group"
                 >
                   <span className="relative z-10">Vreau să încep</span>
@@ -1000,8 +1147,8 @@ export default function Home() {
                       </h3>
                       <p className="text-xs text-gray-600 leading-relaxed">
                         {item.desc}
-          </p>
-        </div>
+                      </p>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -1088,14 +1235,14 @@ export default function Home() {
                       d="M13 7l5 5m0 0l-5 5m5-5H6"
                     />
                   </svg>
-          </a>
-          <a
+                </a>
+                <a
                   href="https://app.carloom.ro/login"
                   className="border-2 border-[#00f7ff] text-[#00f7ff] px-12 py-5 rounded-xl font-bold text-lg hover:bg-[#00f7ff] hover:text-[#0a192f] transition-all transform hover:scale-105"
                 >
                   Ai deja cont? Conectează-te
-          </a>
-        </div>
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -1193,7 +1340,7 @@ export default function Home() {
             </div>
           </div>
         </footer>
-    </div>
+      </div>
     </>
   );
 }
